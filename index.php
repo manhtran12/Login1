@@ -1,5 +1,5 @@
 <?php	 
- $conn = pg_connect("host=ec2-23-22-191-232.compute-1.amazonaws.com dbname=ddpnh3fllikoh9 user=qlacuryvjwfagg password=2b902a01a3f536a9bc5398855594f01f3b6932ee4df7906b980e69d3726c4715 port=5432");
+ $conn = pg_connect("host=ec2-54-205-183-19.compute-1.amazonaws.com dbname=dbfdi5nhqt1i93 user=uxnxvpzveabldk password=f5ed2b8e64715c9f3b7d61680b46a417d137813cff0de179fd02fc921625059d");
   	if($conn){echo 'status : connected';}
  if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$username = $_POST['username'];
@@ -15,7 +15,7 @@ while ($row = pg_fetch_row($result)) {
   echo "name: $row[1]  pass: $row[2]";
   echo "<br />\n";
 }
-	header('Location:chucmung.php');
+	header('Location:succesful.php');
 	 
 
   }else{
