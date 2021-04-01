@@ -1,6 +1,6 @@
 <?php	 
  $conn = pg_connect("host=ec2-54-205-183-19.compute-1.amazonaws.com dbname=dbfdi5nhqt1i93 user=uxnxvpzveabldk password=f5ed2b8e64715c9f3b7d61680b46a417d137813cff0de179fd02fc921625059d");
- if(!$conn){echo "Loi ket noi";}
+if(!$conn){echo "Lost Connect";}
  if(isset($_POST['login'])){
 	$username = $_POST['username'];
  	$password = $_POST['password'];
@@ -11,25 +11,23 @@
 		echo "Vao dc roi";
 	}
 	else{
-		echo "Ngu vl";
+		echo "sai mat khau ban oi ";
 	}
- }
-		
-
+ }	
  ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Login Page</title>
-   <!--Made with love by Mutiullah Samim -->
-   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   	<!--Made with love by Mutiullah Samim -->
+  	 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!--Bootsrap 4 CDN-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-    <!--Fontawesome CDN-->
+  	  <!--Fontawesome CDN-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!--Custom styles-->
